@@ -10,5 +10,5 @@ git add *
 git status
 git commit -m "first commit"
 
-git remote add origin https://github.com/kiws-isucon-bot/isucon12q3-testbot.git
+git remote add origin https://github.com/ChallengeClub/isucon12q3.git
 git push -u origin main
