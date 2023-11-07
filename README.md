@@ -11,7 +11,9 @@
 |02_installPubkey.sh|ユーザのホームに秘密鍵書き込み|
 |03_createUsers.sh|ユーザー名 パスワード フルネームのリストのtxtから全員分を設定| 
 |04_setupSSH.sh|ssh keepaliveでタイムアウト抑止、sshパスワードログイン禁止|
+|05_add_webapp_to_github.sh|webappのgithubへの登録|
 |10-19|**bench,monitor関連**|
+|10_install_packages.sh|aptパッケージのインストール|
 |20-29|**APP CI/CD関連**|
 |30-39|**RDB関連**|
 
