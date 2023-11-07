@@ -4,6 +4,9 @@ sudo apt -y install prometheus prometheus-node-exporter
 # jq install
 sudo apt install -y jq
 
+# dstat
+sudo apt -y install dstat
+
 # alp install
 wget https://github.com/tkuchiki/alp/releases/download/v1.0.18/alp_linux_amd64.tar.gz
 tar xvzf alp_linux_amd64.tar.gz
