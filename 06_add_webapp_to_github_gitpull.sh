@@ -1,14 +1,14 @@
 #!/bin/sh
 # webapp上をgit管理対象にする前提です
 
+# gitconfig 適宜変更してください
+git config --global user.email "kiwasa28+isucon@gmail.com"
+git config --global user.name "isucon"
+git config --global init.defaultBranch main
+git config --global credential.helper 'cache --timeout=2592000'
+
 cd ~/webapp
 git init
-
-# gitconfig 適宜変更してください
-git config user.email "kiwasa28+isucon@gmail.com"
-git config user.name "isucon"
-git config init.defaultBranch main
-git config credential.helper 'cache --timeout=2592000'
 
 # アカウント名, アクセストークン、URLは書き換えてください
 # git remote add origin https://kiws-isucon-bot:{アクセストークン}@github.com/kiws-isucon-bot/isucon13_f1.git
