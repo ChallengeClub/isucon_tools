@@ -1,4 +1,5 @@
 #!/bin/sh
+sudo apt update
 sudo apt -y install prometheus prometheus-node-exporter
 
 # jq install
