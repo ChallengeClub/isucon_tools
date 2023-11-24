@@ -17,3 +17,6 @@ which alp
 # Apache Bench
 # ab install
 sudo apt install -y apache2-utils
+
+# Stress
+sudo apt install stress
