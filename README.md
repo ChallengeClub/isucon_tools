@@ -21,25 +21,25 @@
 
 ```bash
 # ユーザ作成、sudo権限追加、sudo password省略
-$ 01_createUser.sh $USER $PASSWORD $FULLNAME
+$ ./01_createUser.sh $USER $PASSWORD $FULLNAME
 ```
 
 ## 02_installPubkey.sh
 ```bash
 # ユーザのホームに秘密鍵書き込み
-$ 02_installPubkey.sh $USER
+$ ./02_installPubkey.sh $USER
 ```
 
 ## 03_createUsers.sh
 ```bash
 # ユーザー名 パスワード フルネームのリストのtxtから全員分を設定
-$ 03_createUsers.sh  
+$ ./03_createUsers.sh  
 ```
 ToDo: リストtxtのパラメタ指定
 ## 04_setupSSH.sh
 ```bash
 # ssh keepaliveでタイムアウト抑止、sshパスワードログイン禁止
-$ 04_setupSSH.sh 
+$ ./04_setupSSH.sh 
 ```
 # snipets
 まずは各ユーザのファイルで管理して、共通でよく使いそうなものを共有しましょう  
