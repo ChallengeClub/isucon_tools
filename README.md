@@ -12,6 +12,8 @@
 |03_createUsers.sh|ユーザー名 パスワード フルネームのリストのtxtから全員分を設定| 
 |04_setupSSH.sh|ssh keepaliveでタイムアウト抑止、sshパスワードログイン禁止|
 |05_add_webapp_to_github.sh|webappのgithubへの登録|
+|06_add_webapp_to_github_gitpull.sh||
+|07_add_github_keys.sh|githubのユーザからssh公開鍵を取得してisuconユーザに設定|
 |10-19|**bench,monitor関連**|
 |10_install_packages.sh|aptパッケージのインストール|
 |20-29|**APP CI/CD関連**|
@@ -41,6 +43,13 @@ ToDo: リストtxtのパラメタ指定
 # ssh keepaliveでタイムアウト抑止、sshパスワードログイン禁止
 $ ./04_setupSSH.sh 
 ```
+
+## 07_add_github_keys.sh
+```bash
+# 指定したGitHubユーザーの公開SSH鍵をGitHubから取得して、isuconの~/.ssh/authorized_keysに追加します。
+$ ./07_add_github_keys.sh user1 user2 user3 
+```
+
 # snipets
 まずは各ユーザのファイルで管理して、共通でよく使いそうなものを共有しましょう  
 (isucon_tipsに作成しても良いかもです)  

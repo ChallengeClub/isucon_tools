@@ -4,7 +4,7 @@
 USERNAME=$1
 
 # ユーザーにSSH公開鍵を設定
-if [ -f "./$USERNAME.pub" ]; then
+if [ -f "./pubkeys/$USERNAME.pub" ]; then
     # SSH公開鍵を追加
     sudo mkdir -p /home/$USERNAME/.ssh
     sudo cp ./$USERNAME.pub /home/$USERNAME/.ssh/authorized_keys
