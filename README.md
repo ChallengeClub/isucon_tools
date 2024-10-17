@@ -16,6 +16,7 @@
 |07_add_github_keys.sh|githubのユーザからssh公開鍵を取得してisuconユーザに設定|
 |10-19|**bench,monitor関連**|
 |10_install_packages.sh|aptパッケージのインストール|
+|11_nginx_log_setup.sh|nginxのログのjson化スクリプト|
 |20-29|**APP CI/CD関連**|
 |30-39|**RDB関連**|
 
@@ -48,6 +49,12 @@ $ ./04_setupSSH.sh
 ```bash
 # 指定したGitHubユーザーの公開SSH鍵をGitHubから取得して、isuconの~/.ssh/authorized_keysに追加します。
 $ ./07_add_github_keys.sh user1 user2 user3 
+```
+
+## 11_nginx_log_setup.sh
+```bash
+# nginxのログのjson化スクリプト。未動作テスト。
+$ ./11_nginx_log_setup.sh
 ```
 
 # snipets
