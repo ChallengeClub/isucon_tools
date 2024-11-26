@@ -45,6 +45,21 @@ ToDo: リストtxtのパラメタ指定
 $ ./04_setupSSH.sh 
 ```
 
+## 05_add_webapp_to_github.sh
+```bash
+# webappの中身をgit登録してリモートのgithubリポジトリにプッシュします。
+# リモートリポジトリなど設定の中身を書き換えてつかってください。
+$ ./05_add_webapp_to_github.sh  
+```
+
+## 06_add_webapp_to_github_gitpull.sh
+```bash
+# webappの中身をgit登録してリモートのgithubリポジトリにプッシュします。
+# リモートリポジトリなど設定の中身を書き換えてつかってください。
+# 05_add_webapp_to_github.shの改良販。空initialコミットがあったり、git pullがうまくいかないときの対策もあったり。
+$ ./06_add_webapp_to_github_gitpull.sh
+```
+
 ## 07_add_github_keys.sh
 ```bash
 # 指定したGitHubユーザーの公開SSH鍵をGitHubから取得して、isuconの~/.ssh/authorized_keysに追加します。
